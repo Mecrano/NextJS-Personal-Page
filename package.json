@@ -4,7 +4,7 @@
   "description": "This project contains my personal page",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "webpack serve --open Chrome.exe",
     "build": "webpack --mode production"
   },
   "repository": {

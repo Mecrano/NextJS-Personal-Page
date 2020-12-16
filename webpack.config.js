@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 // Webpack Configuration
 const config = {
-    entry: path.resolve(__dirname, 'src/App.jsx'),
+    entry: path.resolve(__dirname, 'src/Index.jsx'),
     output: {
         path: path.resolve(__dirname, 'docs'),
         filename: 'app.js',

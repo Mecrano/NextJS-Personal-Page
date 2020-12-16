@@ -5,11 +5,11 @@ import './styles.scss';
 import Typography from '@material-ui/core/Typography';
 
 // Custom Component
-import Header from '../../components/Header';
-import VideoBG from '../../components/VideoBG';
-import TypeWriter from '../../components/TypeWriter';
-import Parallax from '../../components/Parallax';
-import SocialNetworks from '../../components/SocialNetworks';
+import Header from '../../Components/Header';
+import VideoBG from '../../Components/VideoBG';
+import TypeWriter from '../../Components/TypeWriter';
+import Parallax from '../../Components/Parallax';
+import SocialNetworks from '../../Components/SocialNetworks';
 
 // Config
 import { parallaxData } from '../../config';
