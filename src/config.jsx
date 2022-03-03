@@ -4,36 +4,33 @@ import Icon from '@material-ui/core/Icon';
 const MenuData = [
     {
         id: 'menu_0',
-        route: 'home',
-        icon: '',
-        name: 'Inicio',
-    },
-    {
-        id: 'menu_1',
-        route: 'about',
+        route: '/',
         icon: '',
         name: 'Acerca de mi',
     },
-    {
-        id: 'menu_2',
-        route: 'projects',
-        icon: '',
-        name: 'Proyectos',
-    },
-    {
-        id: 'menu_3',
-        route: 'contact',
-        icon: '',
-        name: 'Contacto',
-    },
+    // {
+    //     id: 'menu_1',
+    //     route: '/projects',
+    //     icon: '',
+    //     name: 'Proyectos',
+    // },
+    // {
+    //     id: 'menu_2',
+    //     route: '/contact',
+    //     icon: '',
+    //     name: 'Contacto',
+    // },
 ];
 
 const parallaxData = {
     titles: [
-        { prefix: 'Yo soy ', word: 'Edwin Obando' },
-        { prefix: 'Yo soy ', word: 'Full stack' },
-        { prefix: 'Yo soy ', word: 'VTEX Developer' },
+        { prefix: 'Yo Soy ', word: 'Edwin Obando' },
+        { prefix: 'Yo Soy ', word: 'Software Developer' },
+        { prefix: 'Yo Soy ', word: 'Full Stack Developer' },
+        { prefix: 'Yo Soy ', word: 'VTEX Developer' },
         { prefix: 'Yo ❤️ ', word: 'Programar' },
+        { prefix: 'Yo ❤️ ', word: 'JS' },
+        { prefix: 'Yo ❤️ ', word: 'VTEX' },
     ],
     description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi consectetur ex elementum lectus vehicula vestibulum. Donec commodo aliquet justo venenatis fermentum. In hac habitasse platea dictumst. Nulla non urna ut arcu auctor ultricies. Pellentesque finibus efficitur egestas. Donec tincidunt mi lorem, vitae placerat erat sagittis sit amet. Nunc leo lectus, fringilla non ipsum commodo, fringilla aliquam ipsum',

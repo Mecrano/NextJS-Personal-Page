@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './styles.scss';
 
 const VideoBG = (props) => {
@@ -7,9 +8,9 @@ const VideoBG = (props) => {
     return (
         <section className="mainVideoBG" id={id}>
             <div className="video-background">
-                <video src={media} type={mediaType} autoPlay loop>
-                    <source />
-                    <track kind="captions" />
+                <video autoPlay loop muted>
+                    <source src={media} type={mediaType} />
+                    Your browser does not support the video tag
                 </video>
             </div>
             <div className="VideoBG-content">

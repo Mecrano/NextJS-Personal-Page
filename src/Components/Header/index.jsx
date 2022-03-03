@@ -1,18 +1,15 @@
 import React from 'react';
 import './styles.scss';
 
-// SmoothScrolling
-import { Link } from 'react-scroll';
-
 // Material UI
 import {
     AppBar,
     Toolbar,
     Typography,
     IconButton,
-    MenuIcon,
+    Link,
 } from '@material-ui/core';
-
+import MenuIcon from '@material-ui/icons/Menu';
 // Device detector
 import { isMobile } from 'react-device-detect';
 
@@ -30,17 +27,9 @@ const Header = () => (
                 ''
             )}
             {MenuData.map((menu) => (
-                <Typography variant="h5" key={menu.id}>
+                <Typography variant="h4" key={menu.id}>
                     {menu.icon}
-                    <Link
-                        activeClass="active"
-                        to={menu.route}
-                        spy
-                        smooth
-                        duration={500}
-                    >
-                        {menu.name}
-                    </Link>
+                    <Link href={menu.route}>{menu.name}</Link>
                 </Typography>
             ))}
         </Toolbar>

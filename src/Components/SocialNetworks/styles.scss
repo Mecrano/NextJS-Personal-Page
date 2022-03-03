@@ -14,5 +14,9 @@
         &:last-child {
             margin-right: 0;
         }
+
+        .MuiIcon-root:hover {
+            color: rgb(252, 34, 34);
+        }
     }
 }

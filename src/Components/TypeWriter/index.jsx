@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 // Custom Component
 
 const TypeWriter = (props) => {
-    const { titles, typingInterval = 60, pauseBetweenWords = 1500 } = props;
+    const { titles, typingInterval = 70, pauseBetweenWords = 4000 } = props;
     const [currentWord, setCurrentWord] = useState('');
     const [currentPrefix, setCurrentPrefix] = useState('');
     const [timeOuts, setTimeOuts] = useState([]);
