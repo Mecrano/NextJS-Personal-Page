@@ -7,13 +7,13 @@ header.mainNavBarTop {
       justify-content: center;
 
       .MuiTypography-root {
-        margin-right: 15px;
-        padding-right: 15px;
-        text-transform: uppercase;
-        text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.14);
+        margin-right: 20px;
+        padding-right: 20px;
 
         a.active, a:hover {
-          color: #f06000;
+          color: rgb(252, 34, 34);
+          cursor: pointer;
+          text-decoration: underline;
         }
       }
     }

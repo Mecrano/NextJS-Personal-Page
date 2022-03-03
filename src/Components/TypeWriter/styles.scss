@@ -5,7 +5,7 @@
         border-color: transparent;
     }
     50% {
-        border-color: orange;
+        border-color: rgb(252, 34, 34);
     }
 }
 
@@ -17,9 +17,9 @@
     span {
         display: block;
         overflow: hidden;
-        border-right: 0.1em solid orange;
+        border-right: 0.1em solid rgb(252, 34, 34);
         white-space: nowrap;
         letter-spacing: 0.1em;
-        animation: blink-caret 0.8s step-end infinite;
+        animation: blink-caret 1.2s step-end infinite;
     }
 }
