@@ -3,18 +3,24 @@ header.mainNavBarTop {
     box-shadow: none;
 
     & > div {
-      display: flex;
-      justify-content: center;
+        display: flex;
+        justify-content: center;
 
-      .MuiTypography-root {
-        margin-right: 20px;
-        padding-right: 20px;
+        .MuiTypography-root {
+            margin-right: 20px;
+            padding-right: 20px;
 
-        a.active, a:hover {
-          color: rgb(252, 34, 34);
-          cursor: pointer;
-          text-decoration: underline;
+            a {
+              color: #fff;
+              text-decoration: none;
+
+                &.active,
+                &:hover {
+                    color: rgb(252, 34, 34);
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
         }
-      }
     }
-  }
+}

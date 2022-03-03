@@ -6,6 +6,8 @@ import "./styles.scss";
 import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 import CssBaseLine from "@material-ui/core/CssBaseline";
 
+import { Routes, Route } from "react-router-dom";
+
 // Components
 import HomePage from "../Pages/Home Page";
 
@@ -21,7 +23,7 @@ const themeJSON = {
         },
         primary: {
             light: "#2B2B2B",
-            main: "#313131",
+            main: "#fff",
             dark: "#000",
             contrastText: "#fff",
         },
@@ -94,7 +96,11 @@ EOTheme.typography.h6 = {
 const App = () => (
     <MuiThemeProvider theme={EOTheme}>
         <CssBaseLine />
-        <HomePage />
+        <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="projects" element={<HomePage />} />
+            <Route path="contact" element={<HomePage />} />
+        </Routes>
     </MuiThemeProvider>
 );
 

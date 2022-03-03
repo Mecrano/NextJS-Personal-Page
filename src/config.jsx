@@ -8,18 +8,18 @@ const MenuData = [
         icon: '',
         name: 'Acerca de mi',
     },
-    // {
-    //     id: 'menu_1',
-    //     route: '/projects',
-    //     icon: '',
-    //     name: 'Proyectos',
-    // },
-    // {
-    //     id: 'menu_2',
-    //     route: '/contact',
-    //     icon: '',
-    //     name: 'Contacto',
-    // },
+    {
+        id: 'menu_1',
+        route: '/projects',
+        icon: '',
+        name: 'Proyectos',
+    },
+    {
+        id: 'menu_2',
+        route: '/contact',
+        icon: '',
+        name: 'Contacto',
+    },
 ];
 
 const parallaxData = {

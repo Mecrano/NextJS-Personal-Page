@@ -1,20 +1,13 @@
-import React from 'react';
-import './styles.scss';
+import React from "react";
+import "./styles.scss";
 
-// Material UI
-import {
-    AppBar,
-    Toolbar,
-    Typography,
-    IconButton,
-    Link,
-} from '@material-ui/core';
-import MenuIcon from '@material-ui/icons/Menu';
-// Device detector
-import { isMobile } from 'react-device-detect';
+import { AppBar, Toolbar, Typography, IconButton } from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
+import { isMobile } from "react-device-detect";
+import { Link } from "react-router-dom";
 
 // Import menu data
-import { MenuData } from '../../config';
+import { MenuData } from "../../config";
 
 const Header = () => (
     <AppBar position="fixed" className="mainNavBarTop" color="inherit">
@@ -24,12 +17,14 @@ const Header = () => (
                     <MenuIcon />
                 </IconButton>
             ) : (
-                ''
+                ""
             )}
-            {MenuData.map((menu) => (
-                <Typography variant="h4" key={menu.id}>
-                    {menu.icon}
-                    <Link href={menu.route}>{menu.name}</Link>
+            {MenuData.map(({ id, icon, route, name }) => (
+                <Typography variant="h4" key={id}>
+                    {icon}
+                    <Link to={route} className={route === window.location.pathname ? "active" : ""}>
+                        {name}
+                    </Link>
                 </Typography>
             ))}
         </Toolbar>
