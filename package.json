@@ -10,6 +10,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@iconscout/react-unicons": "^1.1.6",
     "next": "12.2.5",
     "next-intl": "^2.7.4",
     "react": "18.2.0",
