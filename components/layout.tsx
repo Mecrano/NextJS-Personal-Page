@@ -1,7 +1,7 @@
 import Footer from './Footer'
 import Header from './Header'
 
-const Layout = ({ children }: React.PropsWithChildren) => {
+function Layout({ children }: React.PropsWithChildren) {
   return (
     <>
       <Header />
