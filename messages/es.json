@@ -1,4 +1,11 @@
 {
+  "Header": {
+    "links": {
+      "about": "Sobre mi",
+      "projects": "Proyectos",
+      "blog": "Blog"
+    }
+  },
   "Index": {
     "title": "Home",
     "description": "Esta es la pagina principal"
