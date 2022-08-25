@@ -1,16 +1,28 @@
-import type { NextPage } from 'next'
+import type { NextPage, GetStaticProps } from 'next'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
+import Link from 'next/link'
 
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+  const t = useTranslations('Index')
+
   return (
     <div className={styles.container}>
       <main className={styles.main}>
+        <Link href="/" locale="es">
+          <a>Pasar a español</a>
+        </Link>
+        <Link href="/" locale="en">
+          <a>Pasar a ingles</a>
+        </Link>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          {t('title')}
+          <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
+        <p>{t('description')}</p>
         <p className={styles.description}>
           Get started by editing <code className={styles.code}>pages/index.tsx</code>
         </p>
@@ -48,6 +60,14 @@ const Home: NextPage = () => {
       </footer>
     </div>
   )
+}
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      messages: (await import(`../messages/${locale}.json`)).default,
+    },
+  }
 }
 
 export default Home
