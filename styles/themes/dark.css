@@ -1,0 +1,59 @@
+:root.dark {
+  /* Backgrounds */
+  --background-base: #121212;
+  --background-action-primary: #b6bdff;
+  --background-action-secondary: #121212;
+  --background-action-disabled: #2a2a2a;
+  --background-action-active: #ffffff;
+  --background-action-hover: #414141;
+
+  /* Text Color */
+  --text-primary: #ffffff;
+  --text-secondary: #d0d0d0;
+  --text-tertiary: #a0a0a0;
+  --text-action-primary: #121212;
+  --text-action-secondary: #ffffff;
+  --text-action-disabled: #717171;
+  --text-action-active: #121212;
+  --text-link: #b6bdff;
+
+  /* Hovers */
+  --hover-text-action: #ffffff;
+  --hover-text-link: #a0a0a0;
+
+  /* Borders */
+  --border-action-secondary: #717171;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Backgrounds */
+    --background-base: #121212;
+    --background-action-primary: #b6bdff;
+    --background-action-secondary: #121212;
+    --background-action-disabled: #2a2a2a;
+    --background-action-active: #ffffff;
+    --background-action-hover: #414141;
+
+    /* Text Color */
+    --text-primary: #ffffff;
+    --text-secondary: #d0d0d0;
+    --text-tertiary: #a0a0a0;
+    --text-action-primary: #121212;
+    --text-action-secondary: #ffffff;
+    --text-action-disabled: #717171;
+    --text-action-active: #121212;
+    --text-link: #b6bdff;
+
+    /* Hovers */
+    --hover-text-action: #ffffff;
+    --hover-text-link: #a0a0a0;
+
+    /* Borders */
+    --border-action-secondary: #717171;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+}
