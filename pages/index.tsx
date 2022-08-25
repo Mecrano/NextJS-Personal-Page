@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 
-import styles from '../styles/Home.module.css'
+import styles from 'styles/Home.module.css'
 
 const Home: NextPage = () => {
   const t = useTranslations('Index')
