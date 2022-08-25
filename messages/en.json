@@ -1,4 +1,11 @@
 {
+  "Header": {
+    "links": {
+      "about": "About",
+      "projects": "Projects",
+      "blog": "Blog"
+    }
+  },
   "Index": {
     "title": "Home",
     "description": "This is the home page."
