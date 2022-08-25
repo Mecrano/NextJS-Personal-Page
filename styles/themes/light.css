@@ -1,0 +1,27 @@
+:root,
+:root.light {
+  /* Backgrounds */
+  --background-base: #ffffff;
+  --background-action-primary: #485bff;
+  --background-action-secondary: #ffffff;
+  --background-action-disabled: #e7e7e7;
+  --background-action-active: #2a2a2a;
+  --background-action-hover: #e7e7e7;
+
+  /* Text Color */
+  --text-primary: #121212;
+  --text-secondary: #414141;
+  --text-tertiary: #717171;
+  --text-action-primary: #ffffff;
+  --text-action-secondary: #2a2a2a;
+  --text-action-disabled: #a0a0a0;
+  --text-action-active: #ffffff;
+  --text-link: #485BFF;
+
+  /* Hovers */
+  --hover-text-action: #121212;
+  --hover-text-link: #717171;
+
+  /* Borders */
+  --border-action-secondary: #D0D0D0;
+}
