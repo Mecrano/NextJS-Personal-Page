@@ -1,24 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('./fonts.css');
 @import url('./themes/light.css');
 @import url('./themes/dark.css');
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'SF Pro Text';
-}
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  color: var(--text-link);
-}
-
-a:hover {
-  color: var(--hover-text-link);
+@layer base {
+  html {
+    font-family: 'SF Pro Text';
+  }
 }
 
 body {
