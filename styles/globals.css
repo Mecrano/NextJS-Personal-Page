@@ -16,3 +16,9 @@ body {
   background-color: var(--background-base);
   color: var(--text-primary);
 }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

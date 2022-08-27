@@ -2,6 +2,7 @@ import type { NextPage, GetStaticProps } from 'next'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
+import { UilMoon } from '@iconscout/react-unicons'
 
 import Button from 'components/UI/Button'
 import styles from 'styles/Home.module.css'
@@ -25,7 +26,9 @@ const Home: NextPage = () => {
 
         <p>{t('description')}</p>
 
-        <Button>Primary</Button>
+        <Button>
+          <UilMoon /> Primary
+        </Button>
         <Button variant="secondary">secondary</Button>
         <Button variant="tertiary">tertiary</Button>
         <p className={styles.description}>
