@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { UilGithubAlt, UilLinkedinAlt } from '@iconscout/react-unicons'
 import { useTranslations } from 'next-intl'
 
+import styles from './styles.module.css'
+
 const Navigation = () => {
   const t = useTranslations('Header')
 
@@ -29,10 +31,10 @@ const Navigation = () => {
   ]
 
   return (
-    <nav>
+    <nav className="flex justify-between items-center gap-x-7">
       {links.map(({ href, label }) => (
         <Link key={href} href={href} scroll={false}>
-          <a>{label}</a>
+          <a className={styles.navigation}>{label}</a>
         </Link>
       ))}
     </nav>

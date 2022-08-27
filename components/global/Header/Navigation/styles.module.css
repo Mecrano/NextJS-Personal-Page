@@ -1,0 +1,6 @@
+.navigation {
+}
+
+.navigation:hover {
+  color: var(--hover-text-link);
+}
