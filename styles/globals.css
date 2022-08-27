@@ -17,6 +17,13 @@ body {
   color: var(--text-primary);
 }
 
+*,
+::before,
+::after {
+  transition: all 80ms ease;
+  transition-property: color, background-color;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
