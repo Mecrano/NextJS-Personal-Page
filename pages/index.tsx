@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 
+import Button from 'components/UI/Button'
 import styles from 'styles/Home.module.css'
 
 const Home: NextPage = () => {
@@ -23,6 +24,10 @@ const Home: NextPage = () => {
         </h1>
 
         <p>{t('description')}</p>
+
+        <Button>Primary</Button>
+        <Button variant="secondary">secondary</Button>
+        <Button variant="tertiary">tertiary</Button>
         <p className={styles.description}>
           Get started by editing <code className={styles.code}>pages/index.tsx</code>
         </p>
