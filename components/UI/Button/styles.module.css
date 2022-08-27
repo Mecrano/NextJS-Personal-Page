@@ -34,6 +34,7 @@
 
 .button-secondary:hover {
   background-color: var(--background-action-hover);
+  border-color: var(--background-action-hover);
 }
 
 .button-tertiary {
