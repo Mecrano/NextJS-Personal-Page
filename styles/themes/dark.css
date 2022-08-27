@@ -16,6 +16,7 @@
   --text-action-disabled: #717171;
   --text-action-active: #121212;
   --text-link: #b6bdff;
+  --text-icon: #e7e7e7;
 
   /* Hovers */
   --hover-text-action: #ffffff;
@@ -44,6 +45,7 @@
     --text-action-disabled: #717171;
     --text-action-active: #121212;
     --text-link: #b6bdff;
+    --text-icon: #e7e7e7;
 
     /* Hovers */
     --hover-text-action: #ffffff;
