@@ -10,6 +10,7 @@
   text-transform: uppercase;
   min-width: 126px;
   transition: all 200ms ease;
+  gap: 12px;
 }
 
 .button:hover {

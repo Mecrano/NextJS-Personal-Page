@@ -8,7 +8,7 @@ interface ButtonProps extends React.PropsWithChildren {
 
 const Button = ({ variant = 'primary', onClick = () => {}, className = '', children }: ButtonProps) => {
   return (
-    <button className={`${styles.button} ${styles[`button-${variant}`]} ${className}`} onClick={onClick}>
+    <button className={`${styles.button} ${styles[`button-${variant}`]} ${className} flex-center`} onClick={onClick}>
       {children}
     </button>
   )
