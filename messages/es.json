@@ -6,6 +6,10 @@
       "blog": "Blog"
     }
   },
+  "Footer": {
+    "sentence": "Be nice :)",
+    "copyright": "Edwin Obando © All rights reserved."
+  },
   "Index": {
     "title": "Home",
     "description": "Esta es la pagina principal"
