@@ -11,7 +11,6 @@
     "copyright": "Edwin Obando © All rights reserved."
   },
   "Index": {
-    "title": "Home",
-    "description": "Esta es la pagina principal"
+    "hero": "Hola, Soy <bold>Edwin Obando</bold>, <bold>Full Stack</bold> Developer de <bold>Colombia</bold>."
   }
 }

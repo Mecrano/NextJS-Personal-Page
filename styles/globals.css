@@ -10,6 +10,20 @@
   html {
     font-family: 'SF Pro Text';
   }
+
+  ::-webkit-scrollbar {
+    width: 0.6rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--background-base);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--background-action-hover);
+    border: 0.125rem solid var(--background-action-hover);
+    border-radius: 100vw;
+  }
 }
 
 body {

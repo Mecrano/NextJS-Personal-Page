@@ -11,7 +11,7 @@ function Layout({ children }: React.PropsWithChildren) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>{children}</main>
+      <main className="w-full max-w-7xl p-3 mx-auto">{children}</main>
       <Footer />
     </>
   )
