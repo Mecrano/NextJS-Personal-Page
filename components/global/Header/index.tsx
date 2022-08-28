@@ -33,7 +33,7 @@ const Header = () => {
   ]
 
   return (
-    <header className={`${styles.mainHeader} flex-center w-full my-5 sticky top-0`}>
+    <header className={`${styles.mainHeader} flex-center w-full mt-5 sticky top-0`}>
       <div className="flex justify-between w-full max-w-7xl p-3">
         <Back />
         <div className="flex justify-end items-center gap-x-10">

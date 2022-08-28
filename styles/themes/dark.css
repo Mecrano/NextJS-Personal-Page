@@ -24,6 +24,10 @@
 
   /* Borders */
   --border-action-secondary: #717171;
+
+  /* Gradients */
+  --gradient-intro-from: #00ff38;
+  --gradient-intro-to: #0500ff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,6 +57,10 @@
 
     /* Borders */
     --border-action-secondary: #717171;
+
+    /* Gradients */
+    --gradient-intro-from: #00ff38;
+    --gradient-intro-to: #0500ff;
   }
 
   html {

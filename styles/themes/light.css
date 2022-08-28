@@ -25,4 +25,8 @@
 
   /* Borders */
   --border-action-secondary: #d0d0d0;
+
+  /* Gradients */
+  --gradient-intro-from: #00a3ff;
+  --gradient-intro-to: #ff00c7;
 }
