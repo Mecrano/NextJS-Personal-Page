@@ -1,0 +1,15 @@
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--text-link);
+  }
+}
+
+.typewriter {
+  border-right: 3px solid var(--text-link);
+  animation: blink-caret 0.8s step-end infinite;
+}
