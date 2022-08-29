@@ -11,6 +11,13 @@
     "copyright": "Edwin Obando © All rights reserved."
   },
   "Index": {
-    "hero": "Hello, I’m <bold>Edwin Obando</bold>, <bold>Full Stack</bold> Developer based in <bold>Colombia</bold>."
+    "hero": {
+      "greeting": "Hello, I’m <bold>Edwin Obando</bold>",
+      "knowledge": {
+        "prefix": "I’m",
+        "suffix": "Developer"
+      },
+      "from": "based in <bold>Colombia</bold>."
+    }
   }
 }
