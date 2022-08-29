@@ -1,0 +1,10 @@
+.heroContent {
+  min-width: 700px;
+}
+
+@media (max-width: 767px) {
+  .heroContent {
+    min-width: auto;
+    width: 100%;
+  }
+}

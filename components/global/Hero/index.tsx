@@ -1,10 +1,20 @@
-import Code from './Code'
+import styles from './styles.module.css'
 
-const Hero = ({ children }: React.PropsWithChildren) => {
+interface HeroProps extends React.PropsWithChildren {
+  greeting: string | React.ReactElement | React.ReactNodeArray
+  knowledge: React.ReactElement
+  from: string | React.ReactElement | React.ReactNodeArray
+}
+
+const Hero = ({ children, greeting, knowledge, from }: HeroProps) => {
   return (
-    <div className="flex-center">
-      <Code />
-      <p className="absolute text-3xl sm:text-5xl text-center sm:text-left max-w-6xl px-8">{children}</p>
+    <div className="relative flex-center w-full">
+      {children}
+      <div className={`${styles.heroContent} absolute text-center sm:text-left`}>
+        <p className="text-3xl sm:text-5xl w-full">{greeting}</p>
+        <p className="text-3xl sm:text-5xl w-full">{knowledge}</p>
+        <p className="text-3xl sm:text-5xl w-full">{from}</p>
+      </div>
     </div>
   )
 }
