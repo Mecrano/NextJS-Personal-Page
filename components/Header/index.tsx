@@ -1,8 +1,8 @@
 import { UilGithubAlt, UilLinkedinAlt } from '@iconscout/react-unicons'
 import { useTranslations } from 'next-intl'
 
-import ThemeSwitcher from './ThemeSwitcher'
-import LanguageSwitcher from './LanguageSwitcher'
+import ThemeSwitcher from '../ThemeSwitcher'
+import LanguageSwitcher from '../LanguageSwitcher'
 import NavigationMenu from '../NavigationMenu'
 import styles from './styles.module.css'
 

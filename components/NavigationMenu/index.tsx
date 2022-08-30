@@ -2,11 +2,11 @@ import { useState } from 'react'
 import { UilBars, UilTimes } from '@iconscout/react-unicons'
 import Link from 'next/link'
 
-import Button from 'components/UI/Button'
+import Button from 'components/Button'
 
 import styles from './styles.module.css'
 
-interface NavigationMenuLink {
+export interface NavigationMenuLink {
   href: string
   label: any
   type: 'text' | 'icon'
