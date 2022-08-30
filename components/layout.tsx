@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
-import Footer from './global/Footer'
-import Header from './global/Header'
+import Footer from './Footer'
+import Header from './Header'
 
 function Layout({ children }: React.PropsWithChildren) {
   return (

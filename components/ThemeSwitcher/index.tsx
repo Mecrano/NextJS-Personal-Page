@@ -1,6 +1,6 @@
 import { UilSun, UilMoon } from '@iconscout/react-unicons'
 
-import Button from 'components/UI/Button'
+import Button from 'components/Button'
 import useTheme from 'hooks/useTheme'
 
 const ThemeIcon = ({ theme }: { theme: string | null }) => {

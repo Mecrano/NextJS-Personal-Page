@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { useTranslations } from 'next-intl'
 
-import DropDown from 'components/UI/DropDown'
+import DropDown from 'components/DropDown'
 
 const LanguageSwitcher = () => {
   const { locale, push, pathname, locales } = useRouter()
