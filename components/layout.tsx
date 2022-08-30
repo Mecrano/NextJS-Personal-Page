@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Footer from './Footer'
 import Header from './Header'
 
-function Layout({ children }: React.PropsWithChildren) {
+const Layout = ({ children }: React.PropsWithChildren) => {
   return (
     <>
       <Head>

@@ -1,11 +1,12 @@
-import type { AppProps } from 'next/app'
+import type { AppProps, NextWebVitalsMetric } from 'next/app'
 import { NextIntlProvider } from 'next-intl'
 
 import Layout from 'components/layout'
 import GA from 'components/GA'
+import { event } from 'lib/gtag'
 import 'styles/globals.css'
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <NextIntlProvider
       formats={{
@@ -27,6 +28,17 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Layout>
     </NextIntlProvider>
   )
+}
+
+export const reportWebVitals = ({ id, name, label, value }: NextWebVitalsMetric) => {
+  if (typeof window !== 'undefined' && window?.gtag) {
+    event({
+      action: name,
+      category: label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
+      label: id,
+      value,
+    })
+  }
 }
 
 export default MyApp
