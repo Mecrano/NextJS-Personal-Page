@@ -1,6 +1,5 @@
 import type { NextPage, GetStaticProps } from 'next'
 import { useTranslations } from 'next-intl'
-import Link from 'next/link'
 
 import Hero from 'components/global/Hero'
 import TypeWriter from 'components/global/TypeWriter'
@@ -22,13 +21,6 @@ const Home: NextPage = () => {
       >
         <Code />
       </Hero>
-
-      <Link href="/" locale="es">
-        <a>Pasar a español</a>
-      </Link>
-      <Link href="/" locale="en">
-        <a>Pasar a ingles</a>
-      </Link>
     </>
   )
 }

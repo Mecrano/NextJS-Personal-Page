@@ -1,0 +1,25 @@
+.dropdown {
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 24px;
+  outline: none;
+}
+
+.dropdown:hover {
+  background-color: var(--background-action-hover);
+}
+
+.dropdown span {
+  color: var(--text-icon);
+}
+
+.dropdown select {
+  outline: none;
+}
+
+.dropdown option {
+  color: var(--text-icon);
+  background-color: var(--background-base);
+}
