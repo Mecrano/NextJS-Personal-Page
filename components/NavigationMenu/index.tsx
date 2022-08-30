@@ -9,7 +9,7 @@ import styles from './styles.module.css'
 export interface NavigationMenuLink {
   href: string
   label: any
-  type: 'text' | 'icon'
+  type?: 'text' | 'icon'
 }
 
 interface NavigationMenuProps {
