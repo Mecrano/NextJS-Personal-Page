@@ -38,7 +38,7 @@
 }
 
 .button-tertiary {
-  background-color: var(--background-action-tertiary);
+  background-color: transparent;
   color: var(--text-action-tertiary);
 }
 
@@ -47,7 +47,7 @@
 }
 
 .button-icon {
-  background-color: var(--background-action-tertiary);
+  background-color: transparent;
   color: var(--text-icon);
   padding: 10px;
   min-width: auto;
