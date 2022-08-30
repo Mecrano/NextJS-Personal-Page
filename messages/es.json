@@ -4,6 +4,10 @@
       "about": "Sobre mi",
       "projects": "Proyectos",
       "blog": "Blog"
+    },
+    "languageOptions": {
+      "es": "ES",
+      "en": "EN"
     }
   },
   "Footer": {
