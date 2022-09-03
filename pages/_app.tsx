@@ -31,7 +31,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 }
 
 export const reportWebVitals = ({ id, name, label, value }: NextWebVitalsMetric) => {
-  if (typeof window !== 'undefined' && window?.gtag) {
+  if (typeof window !== 'undefined' && typeof window?.gtag !== 'undefined') {
     event({
       action: name,
       category: label === 'web-vital' ? 'Web Vitals' : 'Next.js custom metric',
