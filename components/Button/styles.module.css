@@ -56,3 +56,16 @@
 .button-icon:hover {
   background-color: var(--background-action-hover);
 }
+
+.button-icon-secondary {
+  background-color: transparent;
+  color: var(--text-icon);
+  padding: 10px;
+  min-width: auto;
+  border-color: var(--border-action-secondary);
+}
+
+.button-icon-secondary:hover {
+  background-color: var(--background-action-hover);
+  border-color: var(--background-action-hover);
+}

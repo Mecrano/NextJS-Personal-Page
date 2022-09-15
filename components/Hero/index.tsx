@@ -11,9 +11,9 @@ const Hero = ({ children, greeting, knowledge, from }: HeroProps) => {
     <div className="relative flex-center w-full">
       {children}
       <div className={`${styles.heroContent} absolute text-center sm:text-left`}>
-        <p className="text-2xl sm:text-5xl w-full">{greeting}</p>
-        <p className="text-2xl sm:text-5xl w-full">{knowledge}</p>
-        <p className="text-2xl sm:text-5xl w-full">{from}</p>
+        <p className="text-3xl sm:text-5xl w-full">{greeting}</p>
+        <p className="text-3xl sm:text-5xl w-full">{knowledge}</p>
+        <p className="text-3xl sm:text-5xl w-full">{from}</p>
       </div>
     </div>
   )

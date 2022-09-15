@@ -17,7 +17,7 @@ const NavigationLinks = ({ links }: { links: NavigationMenuLink[] }) => (
   <>
     {links.map(({ href, label }) => (
       <Link key={href} href={href} scroll={false}>
-        <a className={styles.navigation}>{label}</a>
+        <a className={`${styles.navigation} text-lg`}>{label}</a>
       </Link>
     ))}
   </>
@@ -34,7 +34,7 @@ const NavigationMenu = ({ handleOpen, open, textLinks, iconLinks }: NavigationMe
           <UilTimes />
         </Button>
         <NavigationLinks links={textLinks} />
-        <div className="flex justify-between items-center gap-x-6">
+        <div className="flex justify-between items-center gap-x-6 mt-3 md:mt-0">
           <NavigationLinks links={iconLinks} />
         </div>
       </nav>
