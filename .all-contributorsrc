@@ -1,0 +1,26 @@
+{
+  "projectName": "NextJS-Personal-Page",
+  "projectOwner": "Mecrano",
+  "repoType": "github",
+  "repoHost": "https://github.com/Mecrano/NextJS-Personal-Page",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "eslint",
+  "contributors": [
+    {
+      "login": "mecrano",
+      "name": "Edwin Obando",
+      "avatar_url": "https://avatars.githubusercontent.com/u/26680887?v=4",
+      "profile": "https://www.edwinobando.com/",
+      "contributions": [
+        "owner",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "linkToUsage": true
+}

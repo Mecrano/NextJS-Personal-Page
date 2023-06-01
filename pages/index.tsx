@@ -1,17 +1,18 @@
 import type { NextPage, GetStaticProps, InferGetStaticPropsType } from 'next'
 import { useTranslations } from 'next-intl'
 
-import type { ProjectProps } from 'components/Project'
+import { listProjects, listPosts } from 'lib/contentful'
 import Hero from 'components/Hero'
 import TypeWriter from 'components/TypeWriter'
 import Code from 'components/Icons/Code'
 import Project from 'components/Project'
+import Post from 'components/Post'
 
 const text2bold = {
   bold: (children: React.ReactNode) => <b>{children}</b>,
 }
 
-const Home: NextPage = ({ projects }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const Home: NextPage = ({ projects = [], posts = [] }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const t = useTranslations('Index')
 
   return (
@@ -31,68 +32,28 @@ const Home: NextPage = ({ projects }: InferGetStaticPropsType<typeof getStaticPr
           <p className="max-w-2xl w-full md:text-center sm:text-2xl">{t('projects.sub-heading')}</p>
         </div>
         <div>
-          {projects.map((project: ProjectProps, index: number) => (
-            <Project key={project.id} inverted={!!(index % 2)} {...project} />
+          {projects.map(({ id, ...project }: Project, index: number) => (
+            <Project key={id} {...project} inverted={!!(index % 2)} />
           ))}
         </div>
       </section>
-      <section id="blog" className="mb-16  px-3"></section>
+      <section id="blog" className="mb-16  px-3">
+        {posts.map(({ id, ...post }: Post) => (
+          <Post key={id} {...post} />
+        ))}
+      </section>
     </>
   )
 }
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  const [projects, posts] = await Promise.all([listProjects(false, `${locale}`, 3), listPosts(false, `${locale}`, 4)])
+
   return {
     props: {
-      messages: (await import(`../messages/${locale}.json`)).default,
-      projects: [
-        {
-          id: '1',
-          title: 'Tassel',
-          description: 'UI & UX design for a fashion marketplace. \n Personal conceptual side project.',
-          imageURL: '/images/projects/Project1.webp',
-          buttons: [
-            {
-              label: 'READ CASE STUDY',
-              link: '/projects/tassel',
-              type: 'text',
-              variant: 'primary',
-            },
-            {
-              label: 'github',
-              link: '/github',
-              type: 'icon',
-              variant: 'icon-secondary',
-            },
-            {
-              label: 'demo',
-              link: '/demo',
-              type: 'icon',
-              variant: 'icon-secondary',
-            },
-          ],
-        },
-        {
-          id: '2',
-          title: 'Tassel',
-          description: 'UI & UX design for a fashion marketplace. \n Personal conceptual side project.',
-          imageURL: '/images/projects/Project1.webp',
-          buttons: [
-            {
-              label: 'READ CASE STUDY',
-              link: '/projects/tassel',
-              type: 'text',
-              variant: 'primary',
-            },
-            {
-              label: 'github',
-              link: '/github',
-              type: 'icon',
-              variant: 'icon-secondary',
-            },
-          ],
-        },
-      ],
+      messages: (await import(`../messages/${locale?.split('-')[0]}.json`)).default,
+      projects,
+      posts,
     },
   }
 }
