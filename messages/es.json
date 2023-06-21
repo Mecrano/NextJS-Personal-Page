@@ -25,7 +25,11 @@
     },
     "projects": {
       "title": "Proyectos",
-      "sub-heading": "Yo he trabajado con start-ups y pequeñas empresas, también he creado algunos conceptos para mis proyectos personales."
+      "sub-heading": "He trabajado con diferentes empresas creando proyectos geniales, también he creado algunos conceptos para mis proyectos personales."
+    },
+    "blog": {
+      "title": "Blog",
+      "sub-heading": "Algunos artículos acerca de mis experiencias e ideas de todo lo que he aprendido hasta ahora"
     }
   }
 }
