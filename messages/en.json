@@ -25,7 +25,11 @@
     },
     "projects": {
       "title": "Projects",
-      "sub-heading": "I’ve worked with start-ups and small companies, also I’ve created some concepts for my personal side projects."
+      "sub-heading": "I’ve worked many companies making awesome projects, also I’ve created some concepts for my personal side projects."
+    },
+    "blog": {
+      "title": "Blog",
+      "sub-heading": "Articles about my experience and ideas of what I’ve learned so far."
     }
   }
 }

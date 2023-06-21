@@ -32,15 +32,21 @@ const Home: NextPage = ({ projects = [], posts = [] }: InferGetStaticPropsType<t
           <p className="max-w-2xl w-full md:text-center sm:text-2xl">{t('projects.sub-heading')}</p>
         </div>
         <div>
-          {projects.map(({ id, ...project }: Project, index: number) => (
+          {projects?.map(({ id, ...project }: Project, index: number) => (
             <Project key={id} {...project} inverted={!!(index % 2)} />
           ))}
         </div>
       </section>
-      <section id="blog" className="mb-16  px-3">
-        {posts.map(({ id, ...post }: Post) => (
-          <Post key={id} {...post} />
-        ))}
+      <section id="blog" className="mb-16 px-3">
+        <div className="md:flex items-center justify-between max-w-5xl w-full mx-auto mt-28 mb-6 md:mb-28">
+          <h2 className="text-3xl mb-2 md:text-center md:pr-3 font-bold">{t('blog.title')}</h2>
+          <p className="max-w-2xl w-full md:text-center sm:text-2xl">{t('blog.sub-heading')}</p>
+        </div>
+        <div>
+          {posts?.map(({ id, ...post }: Post) => (
+            <Post key={id} {...post} />
+          ))}
+        </div>
       </section>
     </>
   )
