@@ -14,8 +14,8 @@ const useLanguageSwitcher = () => {
       label: t(lang),
     })) ?? []
 
-  const handleChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    setLanguage(event.target.value)
+  const handleChange = (newLocale: string) => {
+    setLanguage(newLocale)
   }
 
   useEffect(() => {

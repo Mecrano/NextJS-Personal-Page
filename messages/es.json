@@ -29,7 +29,8 @@
     },
     "blog": {
       "title": "Blog",
-      "sub-heading": "Algunos artículos acerca de mis experiencias e ideas de todo lo que he aprendido hasta ahora"
+      "sub-heading": "Algunos artículos acerca de mis experiencias e ideas de todo lo que he aprendido hasta ahora",
+      "action": "Leer articulo"
     }
   }
 }
