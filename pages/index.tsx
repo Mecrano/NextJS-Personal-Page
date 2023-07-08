@@ -1,7 +1,7 @@
 import type { NextPage, GetStaticProps, InferGetStaticPropsType } from 'next'
 import { useTranslations } from 'next-intl'
 
-import { listProjects, listPosts } from 'lib/contentful'
+// import { listProjects, listPosts } from 'lib/contentful'
 import Hero from 'components/Hero'
 import TypeWriter from 'components/TypeWriter'
 import Code from 'components/Icons/Code'
@@ -42,9 +42,9 @@ const Home: NextPage = ({ projects = [], posts = [] }: InferGetStaticPropsType<t
           <h2 className="text-3xl mb-2 md:text-center md:pr-3 font-bold">{t('blog.title')}</h2>
           <p className="max-w-2xl w-full md:text-center sm:text-2xl">{t('blog.sub-heading')}</p>
         </div>
-        <div>
-          {posts?.map(({ id, ...post }: Post) => (
-            <Post key={id} {...post} />
+        <div className="flex flex-wrap">
+          {posts?.map(({ id, ...post }: Post, index: number) => (
+            <Post key={id} index={index + 1} actionText={t('blog.action')} {...post} />
           ))}
         </div>
       </section>
@@ -53,13 +53,13 @@ const Home: NextPage = ({ projects = [], posts = [] }: InferGetStaticPropsType<t
 }
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const [projects, posts] = await Promise.all([listProjects(false, `${locale}`, 3), listPosts(false, `${locale}`, 4)])
+  // const [projects, posts] = (await Promise.all([listProjects(false, `${locale}`, 3), listPosts(false, `${locale}`, 4)])) ?? [[], []]
 
   return {
     props: {
       messages: (await import(`../messages/${locale?.split('-')[0]}.json`)).default,
-      projects,
-      posts,
+      // projects,
+      // posts,
     },
   }
 }

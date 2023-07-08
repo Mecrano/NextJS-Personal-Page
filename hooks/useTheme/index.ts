@@ -23,7 +23,7 @@ const useTheme = () => {
     } else if (window?.matchMedia) {
       const themeHandler = window.matchMedia('(prefers-color-scheme: dark)')
 
-      setLocalTheme(themeHandler.matches ? 'dark' : 'light')
+      setTheme(themeHandler.matches ? 'dark' : 'light')
 
       themeHandler.addEventListener('change', (event) => {
         if (!window?.localStorage?.getItem('theme')) {

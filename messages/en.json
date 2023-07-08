@@ -29,7 +29,8 @@
     },
     "blog": {
       "title": "Blog",
-      "sub-heading": "Articles about my experience and ideas of what I’ve learned so far."
+      "sub-heading": "Articles about my experience and ideas of what I’ve learned so far.",
+      "action": "Read article"
     }
   }
 }
