@@ -6,8 +6,8 @@
       "blog": "Blog"
     },
     "languageOptions": {
-      "es-CO": "ES",
-      "en-US": "EN"
+      "es": "ES",
+      "en": "EN"
     }
   },
   "Footer": {

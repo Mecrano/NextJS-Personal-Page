@@ -10,7 +10,7 @@ interface DropdownItem {
 export interface DropdownProps {
   className?: string
   options: DropdownItem[]
-  placeholder: string
+  placeholder?: string
   Icon?: any
   search?: boolean
   value: string | number | undefined
