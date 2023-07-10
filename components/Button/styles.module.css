@@ -1,16 +1,10 @@
 .button {
   border: 1px solid transparent;
   padding: 10px 16px;
-  text-align: center;
-  border-radius: 50px;
-  font-size: 0.875rem;
-  font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 24px;
   text-transform: uppercase;
   min-width: 126px;
-  transition: all 100ms ease;
-  gap: 12px;
 }
 
 .button:hover {

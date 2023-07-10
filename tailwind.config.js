@@ -33,7 +33,8 @@ module.exports = {
         200: '#d0d0d0',
         100: '#e7e7e7',
       },
-      white: '#ffffff',
+      white: '#fff',
+      black: '#000',
       blue: '#00a3ff',
       lime: '#00ff38',
       purple: { 300: '#0500ff', 200: '#485bff', 100: '#b6bdff' },
@@ -44,6 +45,12 @@ module.exports = {
       none: '0',
       DEFAULT: '3rem',
       sm: '0.875rem',
+    },
+    extend: {
+      transitionProperty: {
+        left: 'left',
+        opacity: 'opacity',
+      },
     },
   },
 }

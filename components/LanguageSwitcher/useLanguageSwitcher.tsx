@@ -1,4 +1,3 @@
-import type { ChangeEvent } from 'react'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import { useTranslations } from 'next-intl'

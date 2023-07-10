@@ -1,7 +1,7 @@
 import type { NextPage, GetStaticProps, InferGetStaticPropsType } from 'next'
 import { useTranslations } from 'next-intl'
 
-// import { listProjects, listPosts } from 'lib/contentful'
+import { listProjects, listPosts } from 'lib/contentful'
 import Hero from 'components/Hero'
 import TypeWriter from 'components/TypeWriter'
 import Code from 'components/Icons/Code'
@@ -28,8 +28,8 @@ const Home: NextPage = ({ projects = [], posts = [] }: InferGetStaticPropsType<t
       </section>
       <section id="projects" className="mb-16 px-3">
         <div className="md:flex items-center justify-between max-w-5xl w-full mx-auto mt-28 mb-6 md:mb-28">
-          <h2 className="text-3xl mb-2 md:text-center md:pr-3 font-bold">{t('projects.title')}</h2>
-          <p className="max-w-2xl w-full md:text-center sm:text-2xl">{t('projects.sub-heading')}</p>
+          <h2 className="text-h3 mb-2 font-bold md:text-h2-md md:text-center md:pr-3">{t('projects.title')}</h2>
+          <p className="max-w-2xl w-full text-h5 md:text-center md:text-h5-md">{t('projects.sub-heading')}</p>
         </div>
         <div>
           {projects?.map(({ id, ...project }: Project, index: number) => (
@@ -39,8 +39,8 @@ const Home: NextPage = ({ projects = [], posts = [] }: InferGetStaticPropsType<t
       </section>
       <section id="blog" className="mb-16 px-3">
         <div className="md:flex items-center justify-between max-w-5xl w-full mx-auto mt-28 mb-6 md:mb-28">
-          <h2 className="text-3xl mb-2 md:text-center md:pr-3 font-bold">{t('blog.title')}</h2>
-          <p className="max-w-2xl w-full md:text-center sm:text-2xl">{t('blog.sub-heading')}</p>
+          <h2 className="text-h3 mb-2 font-bold md:text-h2-md md:text-center md:pr-3">{t('blog.title')}</h2>
+          <p className="max-w-2xl w-full text-h5 md:text-center md:text-h5-md">{t('blog.sub-heading')}</p>
         </div>
         <div className="flex flex-wrap">
           {posts?.map(({ id, ...post }: Post, index: number) => (
@@ -53,13 +53,13 @@ const Home: NextPage = ({ projects = [], posts = [] }: InferGetStaticPropsType<t
 }
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  // const [projects, posts] = (await Promise.all([listProjects(false, `${locale}`, 3), listPosts(false, `${locale}`, 4)])) ?? [[], []]
+  const [projects, posts] = (await Promise.all([listProjects(false, `${locale}`, 3), listPosts(false, `${locale}`, 4)])) ?? [[], []]
 
   return {
     props: {
-      messages: (await import(`../messages/${locale?.split('-')[0]}.json`)).default,
-      // projects,
-      // posts,
+      messages: (await import(`../messages/${locale}.json`)).default,
+      projects,
+      posts,
     },
   }
 }

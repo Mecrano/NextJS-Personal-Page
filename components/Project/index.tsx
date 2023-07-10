@@ -23,7 +23,7 @@ const Project = ({ title, description, imageUrl, slug, callToAction, repositoryL
   return (
     <div className={`md:flex items-center justify-between my-10 mb-20 gap-4${inverted ? '' : ' md:flex-row-reverse'}`}>
       <div className="max-w-xl mb-6 md:mb-0">
-        <Image alt={title} src={imageUrl} layout="intrinsic" width="550px" height="550px" />
+        <Image alt={title} src={imageUrl} layout="intrinsic" width="550" height="550" />
       </div>
       <div className={`max-w-xl w-full flex flex-col text-center md:text-left${inverted ? ' md:items-end md:text-right' : ''}`}>
         <h4 className="mb-3 text-2xl font-medium">{title}</h4>
@@ -35,18 +35,14 @@ const Project = ({ title, description, imageUrl, slug, callToAction, repositoryL
           {repositoryLink ? (
             <Button variant="icon">
               <Link href={repositoryLink} scroll={false}>
-                <a>
-                  <UilGithubAlt />
-                </a>
+                <UilGithubAlt />
               </Link>
             </Button>
           ) : null}
           {demoLink ? (
             <Button variant="icon">
               <Link href={demoLink} scroll={false}>
-                <a>
-                  <UilGlobe />
-                </a>
+                <UilGlobe />
               </Link>
             </Button>
           ) : null}
