@@ -9,7 +9,7 @@ interface HeaderProps {
 
 const Header = ({ navigationLinks }: HeaderProps) => {
   return (
-    <header className={`flex-center w-full sm:mt-5 sticky top-0 z-50 bg-white dark:bg-gray-700`}>
+    <header className={`flex-center w-full sm:mt-5 sticky top-0 z-50 bg-white dark:bg-black`}>
       <div className="flex justify-between w-full max-w-7xl p-3">
         <NavigationMenu links={navigationLinks} />
 

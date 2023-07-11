@@ -1,8 +1,8 @@
 :root.dark {
   /* Backgrounds */
-  --background-base: #121212;
+  --background-base: black;
   --background-action-primary: #b6bdff;
-  --background-action-secondary: #121212;
+  --background-action-secondary: black;
   --background-action-disabled: #2a2a2a;
   --background-action-active: #ffffff;
   --background-action-hover: #414141;
@@ -11,10 +11,10 @@
   --text-primary: #ffffff;
   --text-secondary: #d0d0d0;
   --text-tertiary: #a0a0a0;
-  --text-action-primary: #121212;
+  --text-action-primary: black;
   --text-action-secondary: #ffffff;
   --text-action-disabled: #717171;
-  --text-action-active: #121212;
+  --text-action-active: black;
   --text-link: #b6bdff;
   --text-icon: #e7e7e7;
 
@@ -33,9 +33,9 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* Backgrounds */
-    --background-base: #121212;
+    --background-base: black;
     --background-action-primary: #b6bdff;
-    --background-action-secondary: #121212;
+    --background-action-secondary: black;
     --background-action-disabled: #2a2a2a;
     --background-action-active: #ffffff;
     --background-action-hover: #414141;
@@ -44,10 +44,10 @@
     --text-primary: #ffffff;
     --text-secondary: #d0d0d0;
     --text-tertiary: #a0a0a0;
-    --text-action-primary: #121212;
+    --text-action-primary: black;
     --text-action-secondary: #ffffff;
     --text-action-disabled: #717171;
-    --text-action-active: #121212;
+    --text-action-active: black;
     --text-link: #b6bdff;
     --text-icon: #e7e7e7;
 

@@ -25,6 +25,7 @@ module.exports = {
     },
     colors: {
       gray: {
+        800: '#090909',
         700: '#121212',
         600: '#2a2a2a',
         500: '#414141',
@@ -39,6 +40,7 @@ module.exports = {
       lime: '#00ff38',
       purple: { 300: '#0500ff', 200: '#485bff', 100: '#b6bdff' },
       pink: '#ff00c7',
+      orange: '#ffa800',
       transparent: 'transparent',
     },
     borderRadius: {

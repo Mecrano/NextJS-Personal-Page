@@ -29,7 +29,7 @@ const NavigationMenu = ({ handleOpen, open, textLinks, iconLinks }: NavigationMe
         <UilBars />
       </Button>
       <nav
-        className={`flex flex-col justify-start transition-[left] duration-500 ease-out w-11/12 max-w-xs p-2 fixed -left-[110vw] top-0 bottom-0 z-[51] bg-white dark:bg-gray-700 md:static md:flex-row md:justify-between md:items-center md:gap-x-6 ${
+        className={`flex flex-col justify-start transition-[left] duration-500 ease-out w-11/12 max-w-xs p-2 fixed -left-[110vw] top-0 bottom-0 z-[51] bg-white dark:bg-black md:static md:flex-row md:justify-between md:items-center md:gap-x-6 ${
           open ? '!left-0 ease-in' : ''
         }`}
       >

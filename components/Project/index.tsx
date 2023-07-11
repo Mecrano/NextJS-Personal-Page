@@ -23,25 +23,25 @@ const Project = ({ title, description, imageUrl, slug, callToAction, repositoryL
   return (
     <div className={`md:flex items-center justify-between my-10 mb-20 gap-4${inverted ? '' : ' md:flex-row-reverse'}`}>
       <div className="max-w-xl mb-6 md:mb-0">
-        <Image alt={title} src={imageUrl} layout="intrinsic" width="550" height="550" />
+        <Image alt={title} src={imageUrl} width="550" height="550" />
       </div>
       <div className={`max-w-xl w-full flex flex-col text-center md:text-left${inverted ? ' md:items-end md:text-right' : ''}`}>
-        <h4 className="mb-3 text-2xl font-medium">{title}</h4>
-        <p className="mb-10">{description}</p>
+        <h4 className="mb-3 text-h4 font-medium md:text-h4-md">{title}</h4>
+        <p className="mb-10 text-h6 md:text-h6">{description}</p>
         <div className="flex-center md:justify-start gap-2">
-          <Button variant="primary" onClick={() => push(slug)}>
+          <Button variant="primary" onClick={() => push(`/projects/${slug}`)}>
             {callToAction}
           </Button>
           {repositoryLink ? (
             <Button variant="icon">
-              <Link href={repositoryLink} scroll={false}>
+              <Link href={repositoryLink} scroll={false} target="_blank">
                 <UilGithubAlt />
               </Link>
             </Button>
           ) : null}
           {demoLink ? (
             <Button variant="icon">
-              <Link href={demoLink} scroll={false}>
+              <Link href={demoLink} scroll={false} target="_blank">
                 <UilGlobe />
               </Link>
             </Button>

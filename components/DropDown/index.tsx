@@ -53,7 +53,7 @@ const Dropdown = ({ className, placeholder, options, Icon = null, onChange, valu
         {filteredOptions?.map(({ label, value }) => (
           <div
             key={value}
-            className={`p-4 text-center ${selectedOption === value ? 'text-white bg-gray-400' : 'text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-500'}`}
+            className={`p-4 text-center ${selectedOption === value ? 'text-white bg-gray-400' : 'text-black hover:bg-gray-100 dark:text-white dark:hover:bg-gray-500'}`}
             onClick={() => {
               onChange(value)
               setInput('')

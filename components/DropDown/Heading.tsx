@@ -30,9 +30,9 @@ const Heading = ({ input, setInput, open, setOpen, search, placeholder, Icon, se
 
   return (
     <div
-      className={`text-gray-700 bg-white hover:bg-gray-100 ${
+      className={`text-black bg-white hover:bg-gray-100 ${
         disabled ? 'text-gray-200 bg-gray-300' : ''
-      } cursor-pointer flex options-center justify-between py-3 px-4 rounded dark:text-white dark:bg-gray-700 dark:hover:bg-gray-500`}
+      } cursor-pointer flex options-center justify-between py-3 px-4 rounded dark:text-white dark:bg-black dark:hover:bg-gray-500`}
       onClick={() => !disabled && setOpen(!open)}
     >
       {search && open ? (

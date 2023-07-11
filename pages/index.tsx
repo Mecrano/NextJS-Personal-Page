@@ -6,7 +6,7 @@ import Hero from 'components/Hero'
 import TypeWriter from 'components/TypeWriter'
 import Code from 'components/Icons/Code'
 import Project from 'components/Project'
-import Post from 'components/Post'
+import Posts from 'components/Posts'
 
 const text2bold = {
   bold: (children: React.ReactNode) => <b>{children}</b>,
@@ -42,25 +42,46 @@ const Home: NextPage = ({ projects = [], posts = [] }: InferGetStaticPropsType<t
           <h2 className="text-h3 mb-2 font-bold md:text-h2-md md:text-center md:pr-3">{t('blog.title')}</h2>
           <p className="max-w-2xl w-full text-h5 md:text-center md:text-h5-md">{t('blog.sub-heading')}</p>
         </div>
-        <div className="flex flex-wrap">
-          {posts?.map(({ id, ...post }: Post, index: number) => (
-            <Post key={id} index={index + 1} actionText={t('blog.action')} {...post} />
-          ))}
-        </div>
+        <Posts posts={posts} t={t} />
       </section>
     </>
   )
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const [projects, posts] = (await Promise.all([listProjects(false, `${locale}`, 3), listPosts(false, `${locale}`, 4)])) ?? [[], []]
+export const getStaticProps: GetStaticProps = async ({ locale, preview = false }) => {
+  try {
+    const content = await Promise.all([listProjects(preview, `${locale}`, 3), listPosts(preview, `${locale}`, 4)])
 
-  return {
-    props: {
-      messages: (await import(`../messages/${locale}.json`)).default,
-      projects,
-      posts,
-    },
+    if (content?.length === 2) {
+      const projects: Project[] = content[0] ?? []
+      const posts: Post[] = content[1] ?? []
+
+      return {
+        props: {
+          messages: (await import(`messages/${locale}.json`)).default,
+          projects,
+          posts,
+        },
+      }
+    }
+
+    return {
+      props: {
+        messages: (await import(`messages/${locale}.json`)).default,
+        projects: [],
+        posts: [],
+      },
+    }
+  } catch (error) {
+    console.error(error)
+
+    return {
+      props: {
+        messages: (await import(`messages/${locale}.json`)).default,
+        projects: [],
+        posts: [],
+      },
+    }
   }
 }
 
