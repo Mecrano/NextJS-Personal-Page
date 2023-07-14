@@ -22,7 +22,7 @@ const Project = ({ title, description, imageUrl, slug, callToAction, repositoryL
 
   return (
     <div className={`md:flex items-center justify-between my-10 mb-20 gap-4${inverted ? '' : ' md:flex-row-reverse'}`}>
-      <div className="max-w-xl mb-6 md:mb-0">
+      <div className="max-w-xl mb-6 aspect-square md:mb-0">
         <Image alt={title} src={imageUrl} width="550" height="550" />
       </div>
       <div className={`max-w-xl w-full flex flex-col text-center md:text-left${inverted ? ' md:items-end md:text-right' : ''}`}>

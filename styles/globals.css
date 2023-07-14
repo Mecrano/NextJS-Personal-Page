@@ -31,24 +31,28 @@
     content: '';
     position: absolute;
     width: 100%;
-    height: 65%;
+    height: 100%;
     background: conic-gradient(theme('colors.pink'), theme('colors.orange'));
     filter: blur(200px);
     z-index: -1;
     opacity: 0.3;
-    margin-top: 15%;
+    margin-top: 5%;
   }
 
   .gradient-dark {
     content: '';
     position: absolute;
     width: 100%;
-    height: 65%;
+    height: 100%;
     background: conic-gradient(theme('colors.pink'), theme('colors.blue'));
     filter: blur(200px);
     z-index: -1;
     opacity: 0.3;
-    margin-top: 15%;
+    margin-top: 5%;
+  }
+
+  .gradient-desktop {
+    height: 65%;
   }
 }
 

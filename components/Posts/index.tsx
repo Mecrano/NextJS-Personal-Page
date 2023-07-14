@@ -9,7 +9,7 @@ interface PostsProps {
 
 const Posts = ({ posts, t }: PostsProps) => {
   return (
-    <div className={`before:gradient-light dark:before:gradient-dark flex flex-wrap relative`}>
+    <div className="before:gradient-light dark:before:gradient-dark flex flex-wrap relative md:gradient-desktop">
       {posts?.map(({ id, ...post }: Post, index: number) => (
         <Post key={id} index={index + 1} actionText={t('blog.action')} {...post} />
       ))}

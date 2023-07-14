@@ -14,7 +14,7 @@ module.exports = {
       'small-md': '0.875rem',
       'mini-md': '0.75rem',
       h1: '2.5rem',
-      h2: '2rem',
+      h2: '1.9rem',
       h3: '1.75rem',
       h4: '1.5rem',
       h5: '1.125rem',

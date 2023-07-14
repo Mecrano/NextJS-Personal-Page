@@ -1,21 +1,21 @@
 const Code = () => {
   return (
-    <svg viewBox="50 20 1340 850" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="60 20 1300 800" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g filter="url(#filter0_f_43_2566)">
         <path
           d="M507.637 253.447C503.594 254.144 498.856 256.108 495.571 258.326C494.055 259.403 454.065 299.006 406.81 346.34C313.184 440.056 318.175 434.67 315.9 444.238C314.7 449.434 314.7 454.314 315.9 459.066C318.301 468.317 313.31 462.931 406.178 556.268C462.657 613.042 493.423 643.521 495.95 645.105C501.762 648.97 507.069 650.364 514.776 649.921C522.231 649.541 526.401 648.083 532.213 643.901C542.384 636.424 547.375 622.04 543.9 610.128C541.247 601.13 544.279 604.425 465.5 525.282L392.027 451.462L464.994 378.276C505.174 338.039 538.846 303.822 539.857 302.301C544.09 295.965 545.985 285.826 544.342 278.223C540.805 261.684 524.316 250.596 507.637 253.447Z"
           fill="url(#paint0_angular_43_2566)"
-          fillOpacity="0.7"
+          fillOpacity="1"
         />
         <path
           d="M755.749 202.935C750.509 204.33 746.279 206.865 741.734 211.428C735.105 218.019 734.6 219.476 727.972 251.67C724.878 267.007 718.186 299.645 713.136 324.234C708.086 348.823 699.879 389.003 694.828 413.592C689.778 438.181 683.528 468.664 680.94 481.402C676.584 502.696 668.945 539.96 650.89 628.114C647.102 646.556 643.693 663.604 643.314 665.949C641.736 676.089 646.218 687.94 654.173 694.467C668.503 706.255 689.147 703.973 700.194 689.27C705.055 682.87 703.793 687.813 717.808 619.368C721.595 600.673 727.908 570.063 731.696 551.431C735.547 532.799 741.797 502.253 745.585 483.621C749.436 464.988 755.686 434.442 759.473 415.81C763.324 397.178 769.574 366.631 773.362 347.999C782.705 302.56 794.006 247.044 795.142 241.404C797.604 229.426 794.763 219.54 786.682 211.364C782.2 206.801 777.971 204.33 772.289 202.872C767.807 201.668 760.231 201.731 755.749 202.935Z"
           fill="url(#paint1_angular_43_2566)"
-          fillOpacity="0.7"
+          fillOpacity="1"
         />
         <path
           d="M919.98 253.671C908.04 256.396 898.185 266.345 895.658 278.195C894.015 285.799 895.91 295.938 900.143 302.275C901.154 303.796 934.826 338.016 975.006 378.255L1047.97 451.447L974.5 525.273C895.721 604.421 898.753 601.126 896.1 610.125C892.625 622.038 897.616 636.423 907.787 643.901C913.599 648.083 917.769 649.541 925.224 649.921C932.931 650.364 938.238 648.97 944.05 645.105C946.577 643.52 977.343 613.04 1033.82 556.26C1126.69 462.917 1121.7 468.303 1124.1 459.052C1125.3 454.299 1125.3 449.419 1124.1 444.223C1121.83 434.654 1126.82 440.041 1033.19 346.317C985.935 298.98 945.819 259.247 944.05 258.107C937.48 253.734 927.688 251.896 919.98 253.671Z"
           fill="url(#paint2_angular_43_2566)"
-          fillOpacity="0.7"
+          fillOpacity="1"
         />
       </g>
       <g filter="url(#filter1_b_43_2566)">
@@ -33,26 +33,26 @@ const Code = () => {
         />
       </g>
       <defs>
-        <filter id="filter0_f_43_2566" x="65" y="-48" width="1310" height="1000" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <filter id="filter0_f_43_2566" x="65" y="-48" width="1510" height="900" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
           <feGaussianBlur stdDeviation="125" result="effect1_foregroundBlur_43_2566" />
         </filter>
-        <filter id="filter1_b_43_2566" x="115" y="2.00002" width="1210" height="900" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+        <filter id="filter1_b_43_2566" x="115" y="2.00002" width="1410" height="900" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
           <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feGaussianBlur in="BackgroundImage" stdDeviation="100" />
           <feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_43_2566" />
           <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_43_2566" result="shape" />
         </filter>
-        <radialGradient id="paint0_angular_43_2566" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(430 451.5) rotate(-90) scale(198.5 115)">
+        <radialGradient id="paint0_angular_43_2566" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(430 451.5) rotate(-90) scale(230 140)">
           <stop stopColor="var(--gradient-intro-from)" />
           <stop offset="1" stopColor="var(--gradient-intro-to)" />
         </radialGradient>
-        <radialGradient id="paint1_angular_43_2566" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(719.5 452) rotate(-90) scale(250 76.5)">
+        <radialGradient id="paint1_angular_43_2566" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(719.5 452) rotate(-90) scale(270 95)">
           <stop stopColor="var(--gradient-intro-from)" />
           <stop offset="1" stopColor="var(--gradient-intro-to)" />
         </radialGradient>
-        <radialGradient id="paint2_angular_43_2566" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1010 451.5) rotate(-90) scale(198.5 115)">
+        <radialGradient id="paint2_angular_43_2566" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1010 451.5) rotate(-90) scale(230 140)">
           <stop stopColor="var(--gradient-intro-from)" />
           <stop offset="1" stopColor="var(--gradient-intro-to)" />
         </radialGradient>

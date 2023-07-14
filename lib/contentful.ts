@@ -84,7 +84,7 @@ export const listSlugProjects = async (preview: boolean, locale: string, limit =
 export const getProjectBySlug = async (slug: string, preview: boolean, locale: string) => {
   const entries: any = await fetchGraphQL(
     `query {
-      projectCollection(where: { slug: "${slug}" }, preview: ${preview ? 'true' : 'false'}, locale: "${locale}") {
+      projectCollection(where: { slug: "${slug}" }, preview: ${preview ? 'true' : 'false'}, locale: "${locale}", limit: 1) {
         items {
             sys {
               id
@@ -94,9 +94,21 @@ export const getProjectBySlug = async (slug: string, preview: boolean, locale: s
             description
             content {
               json
+              links {
+                assets {
+                  block {
+                    sys {
+                      id
+                    }
+                    url
+                    description
+                  }
+                }
+              }
             }
             imageUrl
             slug
+            timeRead
             author {
               name
             }
@@ -167,7 +179,7 @@ export const listSlugPosts = async (preview: boolean, locale: string, limit = 10
 export const getPostBySlug = async (slug: string, preview: boolean, locale: string) => {
   const entries: any = await fetchGraphQL(
     `query {
-      postCollection(where: { slug: "${slug}" }, preview: ${preview ? 'true' : 'false'}, locale: "${locale}") {
+      postCollection(where: { slug: "${slug}" }, preview: ${preview ? 'true' : 'false'}, locale: "${locale}", limit: 1) {
         items {
           sys {
             id
@@ -176,9 +188,21 @@ export const getPostBySlug = async (slug: string, preview: boolean, locale: stri
           title
           content {
             json
+            links {
+              assets {
+                block {
+                  sys {
+                    id
+                  }
+                  url
+                  description
+                }
+              }
+            }
           }
           imageUrl
           slug
+          timeRead
           author {
             name
           }

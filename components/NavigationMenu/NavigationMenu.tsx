@@ -1,4 +1,4 @@
-import { UilBars, UilTimes } from '@iconscout/react-unicons'
+import { UilBars, UilTimes, UilEstate } from '@iconscout/react-unicons'
 import Link from 'next/link'
 
 import Button from 'components/Button'
@@ -25,6 +25,11 @@ const NavigationLinks = ({ links }: { links: NavigationMenuLink[] }) => (
 const NavigationMenu = ({ handleOpen, open, textLinks, iconLinks }: NavigationMenuProps) => {
   return (
     <div className="flex-center justify-start">
+      <Button className="hidden md:flex" variant="icon">
+        <Link href="/">
+          <UilEstate />
+        </Link>
+      </Button>
       <Button className="flex md:hidden" variant="icon" onClick={handleOpen}>
         <UilBars />
       </Button>

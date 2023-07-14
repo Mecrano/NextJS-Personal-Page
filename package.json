@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.17.0",
+    "@contentful/rich-text-types": "^16.2.0",
     "@iconscout/react-unicons": "^2.0.2",
     "next": "^13.4.9",
     "next-intl": "^2.17.5",

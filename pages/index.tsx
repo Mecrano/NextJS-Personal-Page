@@ -53,8 +53,7 @@ export const getStaticProps: GetStaticProps = async ({ locale, preview = false }
     const content = await Promise.all([listProjects(preview, `${locale}`, 3), listPosts(preview, `${locale}`, 4)])
 
     if (content?.length === 2) {
-      const projects: Project[] = content[0] ?? []
-      const posts: Post[] = content[1] ?? []
+      const [projects, posts]: [Project[] | undefined, Post[] | undefined] = content ?? [[], []]
 
       return {
         props: {

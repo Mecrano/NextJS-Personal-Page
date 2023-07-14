@@ -12,9 +12,10 @@ interface Post {
   id?: string
   publishedAt?: string
   title: string
-  content: unknown
+  content: any
   imageUrl: string
   slug: string
+  timeRead: string
   author: Author
 }
 
